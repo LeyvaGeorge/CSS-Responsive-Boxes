@@ -1,3 +1,21 @@
 body {
-  background: blanchedalmond;
+  background: lightgray;
+}
+.a, .b, .c {
+  background-color: darkgray;
+}
+
+.a {
+  width: 90%;
+  margin: auto;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.b, .c {
+  width: 90%;
+  margin: 1rem auto;
+  padding: 90px auto ;
+  border: 1px solid black;
+  text-align: center;
 }
