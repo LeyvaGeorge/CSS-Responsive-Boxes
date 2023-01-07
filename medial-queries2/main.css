@@ -33,7 +33,7 @@ width: 100%;
 }
 
 .c,.d,.e {
-  width:calc(33.3% - 50px);
+  width:calc(33.3% - 25px);
 }
 .f {
   margin: 25px 0 0 0;
