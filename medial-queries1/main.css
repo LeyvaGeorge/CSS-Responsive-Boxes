@@ -1,37 +1,50 @@
-/*Code small first then adjust for larger screen down below*/
 body {
-  background: lightgray;
+  background:lightgray;
 }
+
 .a, .b, .c {
   background-color: darkgray;
   font-size: 30px;
-}
-
-.a, .c {
-  width: calc(100% - 100px);
-  margin: 50px auto ;
-  border: 1px solid black;
-  text-align: center;
-}
-
-.b {
-  display:flex;
+  
+  /* align font to be centered in both vertical and horizontal */
+  display: flex;
+  /* Vertical */
   align-items: center;
+  /* Horizontal */
   justify-content: center;
-  
-  width: calc(100% - 100px);
-  height:400px;
-
-  margin: 50px auto;
-  border: 1px solid black;
-  
 }
 
-/*==================================
-At Media when its larger than 600 px
-==================================*/
-
-@media screen and (min-width:600px) {
-
+.a {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  margin: 25px auto 0;
+}
+.box1 {
+  
+  width: 95%;
+  margin: 25px auto 0;
+}
+.b {
+  padding: 200px 0 200px;
+}
+.c {
+  margin: 25px 0 0 0;
 }
 
+@media (min-width:600px) {
+  .box1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .b{
+    width: calc(80% - 25px);
+    margin-right: 25px;
+  }
+  .c {
+    width:20%;
+    /* Rest height back to zero */
+    margin:0;
+  }
+}
