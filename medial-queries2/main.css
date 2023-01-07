@@ -1,3 +1,59 @@
 body {
-  background: papayawhip;
+  background: lightgray;
+}
+.a,.b,.c,.d,.e,.f {
+  background: darkgray;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.a {
+  width: calc(95% - 1px);
+  border: 1px solid black;
+  margin: 25px auto 0;
+}
+
+.box1 {
+  width: calc(95% - 1px);
+  margin: 25px auto 0;
+  border: 1px solid black;
+}
+.box2 {
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.box3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.c,.d,.e {
+  width:calc(33.3% - 50px);
+}
+.f {
+  margin: 25px 0 0 0;
+}
+
+@media (min-width:600px) {
+  .box1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .box2{
+    width: calc(80% - 26px);
+    margin-right: 25px;
+   
+  }
+
+  .f{
+    width:20%;
+    margin:0;
+  }
 }
