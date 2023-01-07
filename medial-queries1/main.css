@@ -1,21 +1,37 @@
+/*Code small first then adjust for larger screen down below*/
 body {
   background: lightgray;
 }
 .a, .b, .c {
   background-color: darkgray;
+  font-size: 30px;
 }
 
-.a {
-  width: 90%;
-  margin: auto;
+.a, .c {
+  width: calc(100% - 100px);
+  margin: 50px auto ;
   border: 1px solid black;
   text-align: center;
 }
 
-.b, .c {
-  width: 90%;
-  margin: 1rem auto;
-  padding: 90px auto ;
+.b {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: calc(100% - 100px);
+  height:400px;
+
+  margin: 50px auto;
   border: 1px solid black;
-  text-align: center;
+  
 }
+
+/*==================================
+At Media when its larger than 600 px
+==================================*/
+
+@media screen and (min-width:600px) {
+
+}
+
